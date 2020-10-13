@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
@@ -10,10 +10,13 @@
 <body>
     <header class="title">tho code review</header>
 
-    <h1> Signup for our newsletter</h1>
-    <p>get the lastest news on how your code is doing right in your inbox</p>
+    <div class="container">
+        <h1> Signup for our newsletter</h1>
+        <p>get the lastest news on how your code is doing right in your inbox</p>
+    </div>
 
     <form>
+        <legend>Contact Information</legend>
         <label for="name">Full Name</label>
         <input type="text" id="name" name="user_name">
 
@@ -23,10 +26,17 @@
         <label for="phone">Phone Number</label>
         <input type="tel" id="phone" name="user_phone">
 
-        <label for="name">Full Nasdfame</label>
-        <input type="text" id="name" name="user_name">
+        <label for="address">Street Address</label>
+        <input type="text" id="address" name="user_address">
 
-        <input type="text" id="name" name="user_name">
+        <label for="city">City</label>
+        <input type="text" id="city" name="user_city">
+
+        <label for="state">state</label>
+        <input type="text" id="state" name="user_state">
+
+        <label for="zip_code">Zip Code</label>
+        <input type="text" id="zip_code" name="user_zip_code">
             <!-- stop for now  -->
 
     </form>
