@@ -22,30 +22,28 @@ header{
     border: 3px solid red;
 }
 .container h1{
-    margin-top: 15px 0;
+    margin: 5px 0;
 }
 .container p{
+    margin-top: 10px;
     margin-bottom: 50px;
     font-size: 1.6em;
 }
 
 form{
-
-margin:5px 10px;
 font-size: 1.4em;
 margin: auto;
 background-color: white;
-/* border: 3px solid red; */
-padding: 5px 5px;
+border: 3px solid red;
+padding: 5px 15px;
 }
-
 
 legend{
 font-size: 1.3em;
 font-weight: bold;
-background-color: yellow;
-border: 3px solid blue;
-padding: 0;
+/* background-color: yellow;
+border: 3px solid blue; */
+
 }
 label{
 margin: 5px 0;
