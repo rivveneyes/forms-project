@@ -1,6 +1,9 @@
 *{
 box-sizing: border-box;
 }
+fieldset{
+    border: none;
+}
 body{
     margin: 0 ;
 }
@@ -19,23 +22,42 @@ header{
     font-size: .8em;
     margin:auto;
     text-align: center;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
+
+.bin{
+    max-width: 90%;
+    margin: auto;
+}
+
 .container h1{
-    margin: 5px 0;
+    margin-top:20px;
 }
 .container p{
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 3px;
     font-size: 1.6em;
+    border-bottom: black solid 5px;
+    padding-bottom: 30px;
 }
 
 form{
 font-size: 1.4em;
-margin: auto;
+border-top: 2px black solid;
 background-color: white;
-border: 3px solid red;
-padding: 5px 15px;
+/* border: 3px solid red; */
+padding-top: 30px;
+}
+
+/* trying to hit teh areacode part of form */
+
+code{
+background-color: blue;
+}
+
+input#zip-code{
+max-width: 50%;
+
 }
 
 legend{
@@ -48,12 +70,13 @@ border: 3px solid blue; */
 label{
 margin: 5px 0;
 }
+select,
 input{
     background-color: lightgray;
     padding: 15px;
     border: none;
     width: 100%;
-
+    border-radius: 5px;
 }
 label{
     margin-top: 10px;
