@@ -8,24 +8,24 @@
 
 </head>
 <body>
-    <header class="title">tho code review</header>
+    <header class="title">the code review</header>
 
     <div class="container">
         <h1> Signup for our newsletter</h1>
         <p>Get the lastest news on how your code is doing right in your inbox</p>
     </div>
    <div class=bin>
-        <form>
-        <fieldset>
+        <form class="top-section">
+        <fieldset class="tester" >
             <legend>Contact Information</legend>
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="user_name">
+            <input type="text" id="name" name="user_name" Required placeholder="required">
 
             <label for="mail">Email Address</label>
-            <input type="email" id="mail" name="user_email">
+            <input type="email" id="mail" name="user_email" Required placeholder="required" >
 
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="user_phone">
+            <input type="telephone" id="phone" name="user_phone">
 
             <label for="address">Street Address</label>
             <input type="text" id="address" name="user_address">
@@ -34,7 +34,8 @@
             <input type="text" id="city" name="user_city">
 
             <label for="state">State</label>
-            <select id="states" name="state">
+            <select id="states" name="state"  >
+                <option value="none">chose a state</option>
                 <option value="option-1">A.</option>
                 <option value="option-2">B.</option>
                 <option value="option-3">C.</option>
@@ -46,21 +47,37 @@
             <input type="number" id="zip-code" name="user_zip_code" >
         </fieldset>
     </div> 
-<hr>
-    <fieldset>
-        <legend>Newsletter</legend>
-        <p> select the newsletters you would like to<br> receive</p>
-            <br>
-            <br>
-            <!-- this will not stay -->
 
+    <fieldset class="bottom-section">
+        <legend class="news-header" >Newsletter</legend>
+        <p> Select the newsletters you would like to<br> receive</p>
+            <input type="checkbox" id="sett" name="first" value="new">
+            <label for="sett">HTML News</label><br>
+            <input type="checkbox" id="sett2" name="first" value="new">
+            <label for="sett2">CSS News</label><br>
+            <input type="checkbox" id="sett4" name="first" value="new">
+            <label for="sett4">Javascript News</label><br>
+    <!-- ====start of news letter sections===== -->
         <p>Newsletter format</p>
 
-                <br>
-                <br>
+        <input type="radio" id="opt_1" name="ship_type">
+        <label for="opt_1">HTML</label><br>
+        
+        <input type="radio" id="opt_2" name="ship_type">
+        <label for="opt_2">Plain text</label>
+
 
         <p>Others topics you'd like to hear about</p>
-        <input type="textarea" >
-    <fieldset>
+        <textarea id="open-text"></textarea>
+        <br>
+        <button type="submit">Sign Up</button>
+
+
+
+        </form>
+
+
+    </fieldset>
+        <h2>Coppyright The Code Review</h2>
 </body>
 </html>

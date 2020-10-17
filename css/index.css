@@ -5,7 +5,8 @@ fieldset{
     border: none;
 }
 body{
-    margin: 0 ;
+    margin: 0;
+    margin-bottom: 100px;
 }
 header{
     padding:10px 0;
@@ -41,18 +42,43 @@ header{
     padding-bottom: 30px;
 }
 
-form{
+/* =====FORM SECTIONS==== */
+.top-section{
 font-size: 1.4em;
 border-top: 2px black solid;
+border-bottom: 2px black solid;
 background-color: white;
 /* border: 3px solid red; */
-padding-top: 30px;
+padding: 30px 0;
+margin-bottom: 30px;
 }
 
+
+.bottom-section label{
+    display: inline-block; 
+    margin: 8px;
+}
+.bottom-section textarea{
+    background-color: lightgray;
+    min-height: 80px;
+    display: inline-block;
+    width: 100%;
+}
 /* trying to hit teh areacode part of form */
 
 code{
 background-color: blue;
+}
+
+input#name,
+input#mail{
+background-color: yellow; 
+
+}
+/* ==== sudo elementa===== */
+input#mail::placeholder,
+input#name::placeholder{
+    text-align: right;
 }
 
 input#zip-code{
@@ -61,24 +87,67 @@ max-width: 50%;
 }
 
 legend{
-font-size: 1.3em;
+font-size: 1em;
 font-weight: bold;
 /* background-color: yellow;
 border: 3px solid blue; */
 
 }
-label{
-margin: 5px 0;
-}
-select,
-input{
+
+.tester select,
+.tester input{
     background-color: lightgray;
     padding: 15px;
     border: none;
     width: 100%;
     border-radius: 5px;
 }
-label{
+ .tester label{
     margin-top: 10px;
     display: block;
+    margin: 5px 0;
+
+}
+
+.news-header{
+    font-size: 1.3em;
+}
+.bottom-section button{
+    width: 100%;
+    min-height: 50px;
+    margin:25px 0px;
+    font-size: 1.2em;
+    color:white;
+    background-color: lightseagreen;
+}
+h2{
+    text-align: center;
+    margin-top:0;
+    
+    margin-bottom: 40px;
+
+}
+
+
+
+/* ====MEDIA QUERIES ===== */
+
+/* @media (min-width: 768px){
+    body{
+        background-color: red;
+        
+    }
+    .tester label{
+        border:3px solid red;
+        max-width: 30%;
+        float: left;
+        margin-bottom: 20px;
+    }
+    .tester input{
+        max-width: 70%;
+        float: right;
+        margin-bottom: 20px;
+    } */
+
+
 }
