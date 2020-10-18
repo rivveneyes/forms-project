@@ -4,26 +4,36 @@ box-sizing: border-box;
 fieldset{
     border: none;
 }
+:focus{
+    border: 8px solid yellow;
+}
 body{
     margin: 0;
     margin-bottom: 100px;
+    font-family: 'Sansita Swashed', cursive;
+    color: lightslategrey;
+}
+legend,
+h1{
+    color:black;
 }
 header{
+    font-family: 'Courier New', Courier, monospace;
     padding:10px 0;
     height: 50px;
     background-color: rgb(28, 28, 75);
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2.5em;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
 }
 .container{
     max-width: 90%;
-    font-size: .8em;
+    font-size: 1em;
     margin:auto;
     text-align: center;
-    /* border: 3px solid red; */
+   
 }
 
 .bin{
@@ -44,7 +54,7 @@ header{
 
 /* =====FORM SECTIONS==== */
 .top-section{
-font-size: 1.4em;
+font-size: 1.8em;
 border-top: 2px black solid;
 border-bottom: 2px black solid;
 background-color: white;
@@ -53,6 +63,9 @@ padding: 30px 0;
 margin-bottom: 30px;
 }
 
+.bottom-section {
+    font-size:1.2em;
+}
 
 .bottom-section label{
     display: inline-block; 
@@ -70,11 +83,6 @@ code{
 background-color: blue;
 }
 
-input#name,
-input#mail{
-background-color: yellow; 
-
-}
 /* ==== sudo elementa===== */
 input#mail::placeholder,
 input#name::placeholder{
@@ -98,15 +106,20 @@ border: 3px solid blue; */
 .tester input{
     background-color: lightgray;
     padding: 15px;
-    border: none;
+    
     width: 100%;
     border-radius: 5px;
+    /* margin-bottom: 20px; */
 }
+
+
+
  .tester label{
     margin-top: 10px;
     display: block;
     margin: 5px 0;
-
+    /* border: 3px solid red; */
+    min-width: 20%;
 }
 
 .news-header{
@@ -132,22 +145,20 @@ h2{
 
 /* ====MEDIA QUERIES ===== */
 
-/* @media (min-width: 768px){
-    body{
-        background-color: red;
+@media (min-width: 768px){
+    .tester select,
+    .tester input{
+        max-width: 75%;
+        border-radius: 5px;
+        margin-bottom: 20px;
         
     }
-    .tester label{
-        border:3px solid red;
-        max-width: 30%;
-        float: left;
-        margin-bottom: 20px;
+    
+    
+    
+     .tester label{
+        display: inline-block;
+        width:24%;
     }
-    .tester input{
-        max-width: 70%;
-        float: right;
-        margin-bottom: 20px;
-    } */
+}    
 
-
-}
