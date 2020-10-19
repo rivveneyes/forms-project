@@ -4,7 +4,7 @@ box-sizing: border-box;
 fieldset{
     border: none;
 }
-:focus{
+.tester input:focus{
     border: 8px solid yellow;
 }
 body{
@@ -12,6 +12,11 @@ body{
     margin-bottom: 100px;
     font-family: 'Sansita Swashed', cursive;
     color: lightslategrey;
+    font-size: .8em;
+}
+
+input{
+    border:8px solid transparent;
 }
 legend,
 h1{
@@ -89,7 +94,7 @@ input#name::placeholder{
     text-align: right;
 }
 
-input#zip-code{
+input#zip_code{
 max-width: 50%;
 
 }

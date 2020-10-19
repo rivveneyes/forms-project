@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=deice-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/index.css">
     <title>Contact Form</title>
@@ -36,7 +36,7 @@
             <input type="text" id="city" name="user_city">
 
             <label for="states">State</label>
-            <select id="states" name="state"  >
+            <select id="states" name="state" >
                 <option value="none">chose a state</option>
                 <option value="option-1">A.</option>
                 <option value="option-2">B.</option>
@@ -46,7 +46,7 @@
             <!-- <input type="text" id="state" name="user_state"> -->
 
             <label for="zip_code">Zip Code</label>
-            <input type="number" id="zip_code" name="user_zip_code" >
+            <input type="text" id="zip_code" name="user_zip_code" >
         </fieldset>
     
     <fieldset class="bottom-section">
@@ -68,8 +68,9 @@
         <label for="opt_2">Plain text</label>
 
 
-        <p>Others topics you'd like to hear about</p>
-        <textarea id="open-text"></textarea>
+        <label for="open-text"> topics you'd like to hear about</label>
+        <textarea name="user_comment" id="open-text"></textarea>
+
         <br>
         <button type="submit">Sign Up</button>
 
